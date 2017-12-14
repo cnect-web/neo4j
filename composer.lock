@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3396cbd1266f3bcdeb6d5d16ff9943e",
+    "content-hash": "e654323c051c5eced910a4fa79ee1dda",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -59,30 +59,44 @@
             "time": "2017-08-18T09:54:01+00:00"
         },
         {
-            "name": "go1/neo4j-builder",
+            "name": "ents24/neo4j-query-builder-php",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/go1com/neo4j_builder.git",
-                "reference": "c26e0771475baef98319b076407ea8e0a292046b"
+                "url": "https://github.com/Ents24/neo4j-query-builder-php.git",
+                "reference": "ae682b144503a06aaed9411b716756322b19ad6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/go1com/neo4j_builder/zipball/c26e0771475baef98319b076407ea8e0a292046b",
-                "reference": "c26e0771475baef98319b076407ea8e0a292046b",
+                "url": "https://api.github.com/repos/Ents24/neo4j-query-builder-php/zipball/ae682b144503a06aaed9411b716756322b19ad6a",
+                "reference": "ae682b144503a06aaed9411b716756322b19ad6a",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "go1\\neo4j_builder\\": "./"
+                    "Adadgio\\GraphBundle\\ORM\\": "ORM/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "time": "2017-11-22 04:16:14"
+            "authors": [
+                {
+                    "name": "Romain BRUCKERT",
+                    "email": "romain.bruckert.esc@gmail.com"
+                },
+                {
+                    "name": "Mark WOOD",
+                    "email": "mark.wood@ents24.com"
+                }
+            ],
+            "description": "Cypher query builder for PHP",
+            "time": "2017-07-19 12:40:36"
         },
         {
             "name": "graphaware/neo4j-bolt",
@@ -1048,7 +1062,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "go1/neo4j-builder": 20
+        "ents24/neo4j-query-builder-php": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

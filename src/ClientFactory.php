@@ -20,8 +20,7 @@ class ClientFactory {
    * @return \GraphAware\Neo4j\Client\Client|null
    */
   public function create() {
-    $config = ['client_class' => Neo4jBuilderClient::class];
-    $builder = ClientBuilder::create($config);
+    $builder = ClientBuilder::create();
 
     $connection = $this->conf->get("neo4j.connection")->get('connection');
 
