@@ -1,5 +1,5 @@
 {
-    "name": "drupal/neo4j",
+    "name": "cnect-web/neo4j",
     "description": "Neo4j Drupal integration",
     "type": "drupal-module",
     "license": "GPL-2.0+",
