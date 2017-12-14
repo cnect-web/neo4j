@@ -1,0 +1,9 @@
+services:
+  logger.channel.neo4j_page:
+    parent: logger.channel_base
+    arguments: ['neo4j_page']
+  neo4j.page_logger:
+    class: Drupal\neo4j_page\Logger
+    arguments: ['@neo4j.client', '@current_user', '@logger.channel.neo4j_page']
+    tags:
+      - { name: event_subscriber }

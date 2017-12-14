@@ -1,0 +1,14 @@
+name: 'Neo4j entity'
+type: module
+description: 'Log entity statistics into Neo4j'
+package: Neo4j
+# core: 8.x
+dependencies:
+  - neo4j
+  - neo4j_page
+
+# Information added by Drupal.org packaging script on 2016-11-02
+version: '8.x-1.0'
+core: '8.x'
+project: 'neo4j'
+datestamp: 1478103187

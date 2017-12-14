@@ -1,0 +1,7 @@
+services:
+  neo4j.client_factory:
+    class: Drupal\neo4j\ClientFactory
+    arguments: ['@config.factory']
+  neo4j.client:
+    class: Graphaware\Neo4j\Client\Client
+    factory: neo4j.client_factory:create

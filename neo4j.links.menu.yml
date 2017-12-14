@@ -1,0 +1,11 @@
+neo4j.admin:
+  title: 'Neo4j admin'
+  route_name: neo4j.admin
+  parent: system.admin_config
+  weight: -4
+
+neo4j.admin.settings:
+  title: 'Neo4j settings'
+  route_name: neo4j.settings
+  parent: neo4j.admin
+  weight: 0

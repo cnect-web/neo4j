@@ -1,0 +1,16 @@
+neo4j.admin:
+  path: '/admin/config/neo4j'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Neo4j admin'
+  requirements:
+    _permission: 'administer neo4j configuration'
+
+neo4j.settings:
+  path: '/admin/config/neo4j/settings'
+  defaults:
+    _controller: '\Drupal\neo4j\Controller\Settings::adminSettings'
+    _title: 'Neo4j settings'
+  requirements:
+    _permission: 'administer neo4j configuration'
+
